@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Garage.WSGerenciaUsuario.props" />
+</Project>
