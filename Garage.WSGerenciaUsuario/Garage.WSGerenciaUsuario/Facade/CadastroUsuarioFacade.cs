@@ -2,7 +2,7 @@
 
 namespace Garage.WSGerenciaUsuario.Facade
 {
-    public interface ICadastroUsuario
+    public interface ICadastroUsuarioFacade
     {
 
         /// <summary>
@@ -11,7 +11,7 @@ namespace Garage.WSGerenciaUsuario.Facade
         /// </summary>
         /// <param name="formulario"></param>
         /// <returns></returns>
-        Task<bool> CadastraUsuario(FormularioCadastraUsuario formulario);
+        Task<bool> CadastraUsuario(FormularioCadastraUsuarioPessoaFisica formulario);
 
         /// <summary>
         /// Efetua a atualizacao dos dados do usuario
@@ -19,42 +19,42 @@ namespace Garage.WSGerenciaUsuario.Facade
         /// </summary>
         /// <param name="formulario"></param>
         /// <returns></returns>
-        Task<bool> AtualizaUsuario(FormularioCadastraUsuario formulario);
+        Task<bool> AtualizaUsuario(FormularioCadastraUsuarioPessoaFisica formulario);
 
         /// <summary>
         /// Exclui os dados do usuario seguindo a LGPD
         /// </summary>
         /// <param name="formulario"></param>
         /// <returns></returns>
-        Task<bool> ExluirUsuario(FormularioCadastraUsuario formulario);
+        Task<bool> ExluirUsuario(FormularioCadastraUsuarioPessoaFisica formulario);
 
         /// <summary>
         /// Exclui os dados do usuario seguindo a LGPD
         /// </summary>
         /// <param name="formulario"></param>
         /// <returns></returns>
-        Task<bool> RecuperaUsuario(FormularioCadastraUsuario formulario);
+        Task<bool> RecuperaUsuario(FormularioCadastraUsuarioPessoaFisica formulario);
     }
-    public class CadastroUsuario : ICadastroUsuario
+    public class CadastroUsuarioFacade : ICadastroUsuarioFacade
     {
-        public Task<bool> AtualizaUsuario(FormularioCadastraUsuario formulario)
+        public Task<bool> AtualizaUsuario(FormularioCadastraUsuarioPessoaFisica formulario)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> CadastraUsuario(FormularioCadastraUsuario formulario)
+        public Task<bool> CadastraUsuario(FormularioCadastraUsuarioPessoaFisica formulario)
         {
 
 
             throw new NotImplementedException();
         }
 
-        public Task<bool> ExluirUsuario(FormularioCadastraUsuario formulario)
+        public Task<bool> ExluirUsuario(FormularioCadastraUsuarioPessoaFisica formulario)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> RecuperaUsuario(FormularioCadastraUsuario formulario)
+        public Task<bool> RecuperaUsuario(FormularioCadastraUsuarioPessoaFisica formulario)
         {
             throw new NotImplementedException();
         }
